@@ -1,0 +1,10 @@
+name: developer
+properties:
+  - name: enabled
+    type: boolean
+  - name: bio
+    type: string
+  - name: years_of_experience
+    type: integer
+  - name: hourly_rate
+    type: float

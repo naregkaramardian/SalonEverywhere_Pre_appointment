@@ -1,0 +1,19 @@
+---
+to: "{{ form.email }}"
+from: "Example Marketplace <info@example.com>"
+reply_to: no-reply@example.com
+subject: "Welcome {{ form.first_name }} in our marketplace!"
+layout: mailer
+---
+
+<h1>Hi {{ form.first_name }}!</h1>
+
+<p>Welcome to SalonEverywhere</p>
+<p>
+  Please click
+  <a
+    href="https://rough-snowflake-570.staging.oregon.platform-os.com/covid_screening"
+    >here</a
+  >
+  for a pre-appointment COVID-19 screening questionnaire
+</p>

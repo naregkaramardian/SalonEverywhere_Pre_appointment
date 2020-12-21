@@ -1,0 +1,100 @@
+.logo {
+  margin: 1.5rem;
+}
+#main {
+  background-color: #f6f6f6;
+  height: 100vh;
+}
+
+.header {
+  background-image: url("../images/salon-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
+}
+
+.content {
+  color: #ffffff;
+  float: right;
+  height: 100%;
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.form {
+  width: 45%;
+  margin: auto;
+}
+
+.form .button {
+  line-height: 1.2rem;
+  min-height: 2.85rem;
+  background-color: #db2827;
+  color: #ffffff;
+  padding: 16px 40px;
+  font-size: 16px;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+}
+.form .button:hover {
+  background-color: hsl(358deg 70% 40%);
+  color: #ffffff;
+}
+
+form label {
+  font-size: medium;
+  font-family: Poppins, HelveticaNeue, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+}
+
+#main h2 {
+  font-size: 36px;
+  line-height: 1.17948718em;
+  text-align: center;
+  font-family: Poppins, HelveticaNeue, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  color: #ffffff;
+}
+
+#main p {
+  font-size: 22px;
+  text-align: center;
+  font-family: Poppins, HelveticaNeue, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  color: #ffffff;
+}
+
+#main h2 B {
+  color: #db2827;
+}
+
+#main-header {
+  padding-top: 5rem;
+}
+@media (max-width: 991px) {
+  .content {
+    height: 100%;
+    width: 100%;
+  }
+  .form {
+    width: 55%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    height: 100vh;
+  }
+  .form {
+    width: 75%;
+    margin: auto;
+  }
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-size: medium;
+}

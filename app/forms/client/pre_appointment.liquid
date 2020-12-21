@@ -1,0 +1,49 @@
+---
+name: pre_appointment
+resource: User
+email_notifications:
+  - pre_appointment_covid_screening
+resource_owner: anyone
+redirect_to: /
+fields:
+  email:
+  first_name:
+---
+
+{% form %}
+<form class="form">
+  <div class="form-group">
+    <label for="email">Client's Email address</label>
+    <input
+      name="{{ form.fields.email.name }}"
+      value="{{ form.fields.email.value }}"
+      id="email"
+      type="email"
+      class="form-control"
+      aria-describedby="emailHelp"
+      placeholder="please enter your Client's Email address"
+      required
+    />
+    {% if form.errors.email %}
+    <p>{{ form.errors.email }}</p>
+    {% endif %}
+  </div>
+  <div class="form-group">
+    <label for="first_name">Client's First Name</label>
+    <input
+      name="{{ form.fields.first_name.name }}"
+      value="{{ form.fields.first_name.value }}"
+      type="text"
+      class="form-control"
+      id="first_name"
+      placeholder="please enter your Client's first Name"
+      required
+    />
+    {% if form.errors.first_name %}
+    <p>{{ form.errors.first_name }}</p>
+    {% endif %}
+  </div>
+
+  <button class="btn button">Send</button>
+</form>
+{% endform %}

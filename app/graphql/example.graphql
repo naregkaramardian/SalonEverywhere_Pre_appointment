@@ -1,0 +1,24 @@
+query get_model($per_page: Int = 20, $page: Int = 1) {
+  models(
+    per_page: $per_page
+    page: $page
+    filter: { deleted_at: { exists: false } }
+  ) {
+    total_entries
+    results {
+      id
+    }
+  }
+}
+
+mutation notify($data: HashObject) {
+  email_send(
+    template: { name: "pre_appointment_covid_screening" }
+    data: $data
+  ) {
+    errors {
+      message
+    }
+    is_scheduled_to_send
+  }
+}

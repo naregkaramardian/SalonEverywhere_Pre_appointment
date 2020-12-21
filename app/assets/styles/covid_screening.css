@@ -1,0 +1,74 @@
+#covid_screening {
+  min-height: 100vh;
+  background-image: url("../images/pre-visit-checklist-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#covid_screening-overlay {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#covid_screening #covid_form_h1 {
+  font-family: Poppins, HelveticaNeue, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  text-align: center;
+  color: white;
+  margin-bottom: 4rem;
+}
+
+#covid_screening p {
+  font-family: Poppins, HelveticaNeue, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  display: inline;
+  font-size: medium;
+}
+
+.pre-visit-form {
+  font-family: Poppins, HelveticaNeue, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  color: white;
+  width: 65%;
+  margin: auto;
+}
+.pre-visit-form .row {
+  margin-top: 1rem;
+}
+
+.pre-visit-form .button {
+  margin: 3rem 0;
+  line-height: 1.2rem;
+  min-height: 2.85rem;
+  background-color: #db2827;
+  color: #ffffff;
+  padding: 16px 40px;
+  font-size: 16px;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+}
+.pre-visit-form .button:hover {
+  background-color: hsl(358deg 70% 40%);
+  color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  #covid_screening-overlay {
+    padding-top: 5rem;
+  }
+  .pre-visit-form {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  #covid_screening {
+    background-image: url("../images/pre-visit-background-portrait.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

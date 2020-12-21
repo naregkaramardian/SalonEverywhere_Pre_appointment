@@ -1,0 +1,44 @@
+#thank-you {
+  min-height: 100vh;
+  background-image: url("../images/Thank-you-stop-covid.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#thank-you-overlay {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#thank-you-content {
+  padding-top: 20rem;
+  width: 70%;
+  margin: auto;
+}
+
+#thank-you h1 {
+  font-family: Poppins, HelveticaNeue, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  text-align: center;
+  color: white;
+  margin-bottom: 4rem;
+  font-size: 6em;
+}
+
+#thank-you h2 {
+  font-family: Poppins, HelveticaNeue, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  text-align: center;
+  color: #db2827;
+  margin-bottom: 4rem;
+  font-size: 7em;
+}
+
+@media (max-width: 767px) {
+  #thank-you-content {
+    padding-top: 5rem;
+  }
+}
